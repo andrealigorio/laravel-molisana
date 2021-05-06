@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    height: $heightFooter;
+    background-color: $textColor;
+    p {
+        color: $primaryBrand;
+        text-align: center;
+        line-height: $heightFooter;
+        font-weight: $fontWeight - 100;
+    }
+}

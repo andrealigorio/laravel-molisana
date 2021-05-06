@@ -3,5 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    contenuto home
+    <div class="jumbotron">
+        
+    </div>
 @endsection

@@ -7,10 +7,21 @@
 body {
     font-family: $fontFamily;
     font-size: $fontSize;
+    font-weight: $fontWeight;
 }
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
+}
+.layover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primaryBrand;
+    opacity: 0.6;
 }
