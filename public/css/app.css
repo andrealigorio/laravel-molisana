@@ -31,6 +31,7 @@ a {
 
 header .logo {
   text-align: center;
+  cursor: pointer;
 }
 
 header .menu {
@@ -59,9 +60,16 @@ header .menu ul li a {
 .jumbotron {
   width: 100%;
   height: 600px;
-  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
   background-size: cover;
   background-position: center;
+}
+
+.jumbotron.home {
+  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
+}
+
+.jumbotron.news {
+  background-image: url(/images/solidarieta-top.jpg?f438e7d9155cc467e5f9f77e7bc7b32f);
 }
 
 .content_text {
@@ -114,6 +122,26 @@ header .menu ul li a {
 .card:hover img {
   transform: scale(1.2);
   transition: 0.5s;
+}
+
+.news_box {
+  padding: 20px;
+}
+
+.news_box .description {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.news_box .description .title {
+  font-weight: 400;
+  border-bottom: 1px solid #001942;
+}
+
+.news_box .description p {
+  padding: 20px 0;
+  font-weight: 300;
+  font-size: 21.6px;
 }
 
 footer {
