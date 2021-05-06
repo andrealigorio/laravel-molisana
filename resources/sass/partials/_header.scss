@@ -1,0 +1,23 @@
+header {
+    .logo {
+        text-align: center;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                padding: $spacing * 0.5;
+                font-size: $fontSize * 1.5;
+                &:hover {
+                    background-color: $hoverColor;
+                }
+                a {
+                    color: $textColor;
+                }
+            }
+        }
+    }
+}

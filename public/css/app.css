@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .logo {
+  text-align: center;
+}
+
+header .menu {
+  display: flex;
+  justify-content: center;
+}
+
+header .menu ul {
+  display: flex;
+  align-items: center;
+}
+
+header .menu ul li {
+  padding: 10px;
+  font-size: 27px;
+}
+
+header .menu ul li:hover {
+  background-color: #b3e5fc;
+}
+
+header .menu ul li a {
+  color: #001942;
+}
+
