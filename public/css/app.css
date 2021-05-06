@@ -7,7 +7,7 @@
 body {
   font-family: "Teko", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 ul {
@@ -47,6 +47,7 @@ header .menu ul {
 header .menu ul li {
   padding: 10px;
   font-size: 27px;
+  font-weight: 400;
 }
 
 header .menu ul li:hover {
@@ -81,7 +82,7 @@ header .menu ul li a {
   text-align: center;
   line-height: 70px;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .container {
@@ -112,6 +113,8 @@ header .menu ul li a {
   transform: translate(-50%, -50%);
   font-size: 27px;
   text-align: center;
+  color: #001942;
+  font-weight: 300;
 }
 
 .card:hover .layover,
@@ -134,7 +137,7 @@ header .menu ul li a {
 }
 
 .news_box .description .title {
-  font-weight: 400;
+  font-weight: 300;
   border-bottom: 1px solid #001942;
 }
 
@@ -154,6 +157,6 @@ footer p {
   color: white;
   text-align: center;
   line-height: 70px;
-  font-weight: 300;
+  font-weight: 200;
 }
 

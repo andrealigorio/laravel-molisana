@@ -12,6 +12,7 @@ header {
             li {
                 padding: $spacing * 0.5;
                 font-size: $fontSize * 1.5;
+                font-weight: $fontWeight + 100;
                 &:hover {
                     background-color: $hoverColor;
                 }

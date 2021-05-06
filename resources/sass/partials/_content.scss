@@ -43,6 +43,8 @@
             transform: translate(-50%, -50%);
             font-size: $fontSize * 1.5;
             text-align: center;
+            color: $textColor;
+            font-weight: $fontWeight;
         }
     }
 }
@@ -64,7 +66,7 @@
         }
         p {
             padding: $spacing 0;
-            font-weight: $fontWeight - 100;
+            font-weight: $fontWeight;
             font-size: $fontSize * 1.2;
         }
     }
