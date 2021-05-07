@@ -23,9 +23,15 @@
 .container {
     width: 100%;
     padding: $spacing * 0.5;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    > h1 {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .container_card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
     .card {
         position: relative;
         width: calc(100% / 3 - #{$spacing});
@@ -35,7 +41,7 @@
         img {
             width: 100%;
         }
-        span {
+        a {
             display: none;
             position: absolute;
             top: 50%;
@@ -45,10 +51,13 @@
             text-align: center;
             color: $textColor;
             font-weight: $fontWeight;
+            &:hover {
+                opacity: 0.6;
+            }
         }
     }
 }
-.card:hover .layover, .card:hover span {
+.card:hover .layover, .card:hover a {
     display: block;
 }
 .card:hover img {
@@ -69,5 +78,19 @@
             font-weight: $fontWeight;
             font-size: $fontSize * 1.2;
         }
+    }
+}
+.details_container {
+    display: flex;
+    flex-direction: column;
+    h1, .details_description {
+        padding: $spacing;
+    }
+    .details_description {
+        font-size: $fontSize * 1.5;
+    }
+    .details_description li {
+        text-indent: $spacing;
+        margin-inline-start: $spacing * 3;
     }
 }

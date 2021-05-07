@@ -29,6 +29,10 @@ a {
   opacity: 0.6;
 }
 
+.active {
+  background-color: #b3e5fc;
+}
+
 header .logo {
   text-align: center;
   cursor: pointer;
@@ -88,8 +92,16 @@ header .menu ul li a {
 .container {
   width: 100%;
   padding: 10px;
+}
+
+.container > h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container .container_card {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -105,7 +117,7 @@ header .menu ul li a {
   width: 100%;
 }
 
-.container .card span {
+.container .card a {
   display: none;
   position: absolute;
   top: 50%;
@@ -117,8 +129,12 @@ header .menu ul li a {
   font-weight: 300;
 }
 
+.container .card a:hover {
+  opacity: 0.6;
+}
+
 .card:hover .layover,
-.card:hover span {
+.card:hover a {
   display: block;
 }
 
@@ -145,6 +161,26 @@ header .menu ul li a {
   padding: 20px 0;
   font-weight: 300;
   font-size: 21.6px;
+}
+
+.details_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.details_container h1,
+.details_container .details_description {
+  padding: 20px;
+}
+
+.details_container .details_description {
+  font-size: 27px;
+}
+
+.details_container .details_description li {
+  text-indent: 20px;
+  -webkit-margin-start: 60px;
+          margin-inline-start: 60px;
 }
 
 footer {

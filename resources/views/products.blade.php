@@ -7,14 +7,19 @@
         <h1>Le nostre paste</h1>
     </div>
     <div class="container">
-        @foreach ($paste as $pasta)
-            <div class="card">
-                <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
-                <div class="layover">
-                </div>
-                <span>
-                    {{$pasta['titolo']}}
-                </span>
+        @foreach ($formati as $tipo => $formato)
+        <h1>{{$tipo}}</h1>
+            <div class="container_card">
+                @foreach ($formato as $key => $pasta)    
+                    <div class="card">
+                        <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+                        <div class="layover">
+                        </div>
+                        <a href="{{ route('details-page', ['id' => $key] )}}">
+                            {{$pasta['titolo']}}
+                        </a>
+                    </div>
+                @endforeach
             </div>
         @endforeach
     </div>
